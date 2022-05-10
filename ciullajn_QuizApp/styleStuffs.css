@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(var(--hue), 100%, 45%);
+}
+
+ body.correct {
+    --hue: var(--hue-correct);
+    background-color: hsl(var(--hue), 100%, 30%);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+    background-color: hsl(var(--hue), 100%, 30%);
+}
+
+.container {
+    width: 400px;
+    max-width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+.buttonGrid {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+.button {
+    --hue: var(--hue-neutral);
+    
+    padding: 5px 10px;
+}
+
+.button.correct {
+    --hue: var(--hue-correct);
+    background-color: hsl(var(--hue), 100%, 30%);
+}
+.button.wrong {
+    --hue: var(--hue-wrong);
+    background-color: hsl(var(--hue), 100%, 30%);
+}
+
+.startButton, .nextButton {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
