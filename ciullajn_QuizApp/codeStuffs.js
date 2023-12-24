@@ -1,3 +1,7 @@
+// There should be comments here
+// No code should be undocumented. 
+// Somwehere, a turtle is crying
+///
 const startButton = document.getElementById('startButton')
 const nextButton = document.getElementById('nextButton')
 const questionContainerHTMElement = document.getElementById('questionContainer')
